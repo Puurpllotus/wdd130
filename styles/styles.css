@@ -42,10 +42,12 @@ aside {
 }
 
 img {
-    width: 300px;
+    width: 200px;
     height: auto;
 }
 
 footer {
     text-align: center;
+    margin-top: center;
+    border-top: center;
 }
