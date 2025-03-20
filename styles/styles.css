@@ -1,3 +1,7 @@
+main {
+    max-width: 840px;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -16,7 +20,7 @@ h1 {
 }
 
 main p {
-    margin-left: 8%;
+    margin-left: 3%;
 }
 
 main img {
@@ -29,14 +33,15 @@ main img {
 }
 
 p {
-    padding: 0;
+    padding: 20px;
 }
 
 aside {
     background-color: black;
     padding: 10px;
     color: white;
-    width: 80%;
+    width: 200%;
+    height: auto;
     margin: 0 auto;
     border: 1px solid black;
 }
@@ -48,6 +53,7 @@ img {
 
 footer {
     text-align: center;
-    margin-top: center;
-    border-top: center;
+    margin-top: 50px;
+    border-top: 1px solid #000;
+    padding: 20px;
 }
