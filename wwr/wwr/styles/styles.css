@@ -62,20 +62,20 @@ h2 {
     p{
         color: rgb(1, 1, 2);
         font-family: serif; /* Changed to serif for better readability */
-        font-size: 25px; /* Changed to 25px for better readability */
+        font-size: 20px; /* Changed to 25px for better readability */
         margin-top: 0px; /* Changed to 0px for better spacing */
     }
 }
 
 h3 {
     color: rgb(0, 65, 106);
-    font-family: 'Winky Sans', serif; /* Changed to serif for better readability */
+    font-family: 'Winky Sans', sans-serif; /* Changed to serif for better readability */
     font-size: 35px;
     margin-bottom: 1%;/* Changed to 1% for better spacing */
     p{
         color: rgb(1, 1, 2);
         font-family: serif; /* Changed to serif for better readability */
-        font-size: 25px; /* Changed to 25px for better readability */
+        font-size: 20px; /* Changed to 25px for better readability */
         margin-top: 0px; /* Changed to 0px for better spacing */
     }
 }
