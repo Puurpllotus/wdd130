@@ -1,9 +1,13 @@
 main {
     max-width: 840px;
 }
-
+main img{
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+}
 nav {
-    background-color: darkblue;
+    background-color: rgb(185, 46, 178);
     padding: 10px;
 }
 
@@ -14,7 +18,7 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: rgb(139, 0, 127);
     margin-left: 10%;
 
 }
@@ -23,27 +27,25 @@ main p {
     margin-left: 3%;
 }
 
-main img {
-    width: 150px;
+.hero img {
+    width: 100%;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    margin: 10%;
+    object-fit: cover;   
 }
 
 p {
     padding: 20px;
 }
 
-aside {
-    background-color: black;
-    padding: 10px;
-    color: white;
-    width: 200%;
+.hero1 {
+    position: relative;
+    bottom: 200px;
+    color: rgb(20, 12, 12);
+    background: radial-gradient(#eee, #d6d6d24b);
+    width: 90%;
     height: auto;
-    margin: 0 auto;
-    border: 1px solid black;
+    font-weight: 500;
+    font-size: larger;
 }
 
 img {
