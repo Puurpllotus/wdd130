@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #fcb747;
+    --secondry-color: #5698d1;
+    --accent1-color: #f25d52;
+    --accent2-color: #003d5b;
+
+    --heading-font: 'Rock Salt', cursive;
+    --paragraph-font: 'winky sans', sans-serif;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+}
+
+h2,
+h3 {
+    font-family: var(--paragraph-font);
+    /*body paragraph font*/
+    color: var(--secondry-color);
+    margin: 30px;
+}
+
+a {
+    /* Navigation links */
+    text-decoration: none;
+}
+
+header, main, footer {
+    max-width: 1500px;
+    margin: 0 auto
+}
+
+.hero {
+    position: relative;
+    /* Positioning relative to the hero div */
+}
+
+.hero img {
+    width: 100%;
+    /* Set width of the image */
+    height: auto;
+}
+
+
+.hero h1 {
+    position: absolute;
+    top: 1em;
+    /* Adjust as needed */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Centering adjustment */
+    font-family: var(--heading-font);
+    /* Heading font */
+    font-size: 3em;
+    /* Font size for heading */
+    color: #000;
+    /* Text color */
+    padding: 1rem;
+    /* Padding around the heading*/
+    background-color: #f25d5291;
+}
+
+.hero article {
+    position: absolute;
+    /* Positioning relative to the hero div */
+    background-color: #fcb7478e;
+    bottom: 2rem;
+    /* Adjust as needed */
+    left: 2rem;
+    /* Center horizontally */
+    right: 2rem;
+    /* Centering adjustment */
+    font-size: 1.5em;
+    /* Font size for article text */
+    padding: 1rem;
+    /* Padding around the article text */
+}
+
+.hero article img {
+    float: right;
+    /* Float image to the right */
+    width: 20rem;
+    /* Set width of the image */
+    margin: 2rem;
+    /* Margin around the image */
+}
+
+.hero article p {
+    font-size: 1em;
+    /* Font size for article heading */
+    color: var(--primary-color--);
+    /* Text color */
+    font-family: var(--paragraph-font--);
+    /* Heading font */
+}
+
+p {
+    padding: 20px;
+}
+
+.adventure img {
+    width: 30em;
+    /* Set width of the image */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+footer p{
+    border: --accent2-color solid 1px;
+    background-color: #003d5b;
+    color:#f25d52;
+    text-align: center;
+}
+.social img {
+    width: 3em;
+    /* Set width of the image */
+}
