@@ -26,7 +26,9 @@ a {
     text-decoration: none;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     max-width: 1500px;
     margin: 0 auto
 }
@@ -106,12 +108,14 @@ p {
     height: auto;
     /* Maintain aspect ratio */
 }
-footer p{
+
+footer p {
     border: --accent2-color solid 1px;
     background-color: #003d5b;
-    color:#f25d52;
+    color: #f25d52;
     text-align: center;
 }
+
 .social img {
     width: 3em;
     /* Set width of the image */
