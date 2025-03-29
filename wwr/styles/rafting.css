@@ -57,7 +57,7 @@ footer {
     /* Heading font */
     font-size: 2em;
     /* Font size for heading */
-    color: var(--primary-color);
+    color: var(--accent2-color);
     /* Text color */
     padding: 1rem;
     /* Padding around the heading*/
