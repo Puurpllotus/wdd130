@@ -10,7 +10,7 @@
 
 body {
     font-family: var(--paragraph-font);
-    font-size: 18px;
+    font-size: 15px;
 }
 
 h2,
@@ -53,9 +53,9 @@ header, main, footer {
     /* Centering adjustment */
     font-family: var(--heading-font);
     /* Heading font */
-    font-size: 3em;
+    font-size: 2em;
     /* Font size for heading */
-    color: #000;
+    color: var(--primary-color);
     /* Text color */
     padding: 1rem;
     /* Padding around the heading*/
@@ -66,7 +66,7 @@ header, main, footer {
     position: absolute;
     /* Positioning relative to the hero div */
     background-color: #fcb7478e;
-    bottom: 2rem;
+    bottom: 1rem;
     /* Adjust as needed */
     left: 2rem;
     /* Center horizontally */
