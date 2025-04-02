@@ -1,11 +1,45 @@
 :root {
     --primary-color: #fcb747;
-    --secondry-color: #5698d1;
+    --secondary-color: #5698d1;
     --accent1-color: #f25d52;
     --accent2-color: #003d5b;
 
     --heading-font: 'Rock Salt', cursive;
     --paragraph-font: 'winky sans', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    max-width: 850px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    color: #f25d52;
+    text-align: center;
+    padding: 5px 25px;
+    margin: 60px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+nav a:hover {
+    background-color: #003d5b;
+    color: #fcb747;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -20,7 +54,7 @@ h5,
 h6 {
     font-family: var(--paragraph-font);
     /*body paragraph font*/
-    color: var(--secondry-color);
+    color: var(--secondary-color);
     margin: 30px;
 }
 
@@ -32,7 +66,8 @@ a {
 header,
 main,
 footer {
-    max-width: 1500px;
+
+    max-width: 1200px;
     margin: 0 auto
 }
 
@@ -45,6 +80,8 @@ footer {
     width: 100%;
     /* Set width of the image */
     height: auto;
+    /* Maintain aspect ratio */
+    margin: 0 auto;
 }
 
 
@@ -58,20 +95,21 @@ footer {
     /* Centering adjustment */
     font-family: var(--heading-font);
     /* Heading font */
-    font-size: 2em;
+    font-size: 2.5em;
     /* Font size for heading */
     color: var(--accent2-color);
     /* Text color */
     padding: 1rem;
     /* Padding around the heading*/
     background-color: #f25d5291;
+    margin: 0 auto;
 }
 
 .hero article {
     position: absolute;
     /* Positioning relative to the hero div */
-    background-color: #fcb7478e;
-    bottom: 1rem;
+    background-color: #f25d5257;
+    bottom: 2.5rem;
     /* Adjust as needed */
     left: 2rem;
     /* Center horizontally */
@@ -79,47 +117,151 @@ footer {
     /* Centering adjustment */
     font-size: 1.5em;
     /* Font size for article text */
-    padding: 1rem;
+    padding: 0;
     /* Padding around the article text */
+    margin: 0 auto;
 }
 
 .hero article img {
-    float: right;
+    display: flexbox;
     /* Float image to the right */
     width: 20rem;
     /* Set width of the image */
-    margin: 2rem;
+    margin: 0 auto;
     /* Margin around the image */
 }
 
 .hero article p {
     font-size: 1em;
     /* Font size for article heading */
-    color: var(--primary-color--);
+    color: var(--accent2-color);
     /* Text color */
-    font-family: var(--paragraph-font--);
+    font-family: var(--paragraph-font);
     /* Heading font */
+    margin: 0 auto;
 }
 
-p {
-    padding: 20px;
+
+.history {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr) 2fr;
+    /* Responsive grid layout */
+    gap: 20px;
+    /* Gap between grid items */
+    margin: 40px 0;
+    /* Margin around the grid */
+    justify-items: center;
+    /* Center items in the grid */
+}
+
+.history h2 {
+    grid-column: 1/-1;
+    /* Span all columns */
+    justify-self: center;
+    /* Center the heading */
+    padding: 10px;
+    /* Padding around the heading */
+    font-family: var(--heading-font);
+    /* Heading font */
+    background-color: var(--primary-color);
+    /* Background color */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+.history img {
+    width: 70%;
+    /* Set width of the image*/
+    height: auto;
+    margin: 3rem auto;
+}
+
+.history p {
+    font-size: 1.2em;
+    /* Font size for article text */
+    font-family: var(--paragraph-font);
+    /* Heading font */
+    padding: 15px;
+    /* Padding around the article text */
+    margin: 0 auto;
+    /* Margin around the article text */
+}
+
+
+.adventure {
+    position: relative;
+    /* Positioning relative to the adventure div */
+    text-align: center;
+    /* Center text within the div */
+}
+
+.adventure h2 {
+    position: absolute;
+    /* Positioning relative to the adventure div */
+    top: -70px;
+    /* Adjust as needed */
+    left: 600px;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Centering adjustment */
+    font-family: var(--heading-font);
+    /* Heading font */
+    color: var(--secondary-color);
+    /* Text color */
+    background-color: var(--primary-color);
+    /* Background color */
+    padding: 10px;
+    /* Padding around the heading */
+    border-radius: 10px;
+    /* Rounded corners */
+    margin: 1 auto;
+    /* Margin around the heading */
+    justify-content: center;
+    /* Center the heading */
+}
+
+.adventure figure {
+    display: inline-block;
+    /* Display as inline-block for centering */
+    margin: 10px;
+    /* Margin around the figure */
+    text-align: center;
+    /* Center text within the figure */
+    font-weight: bold;
+    /* Bold text */
+    font-size: 15px;
+    /* Font size for figure text */
+    color: var(--accent2-color);
+    /* Text color */
+    background-color: var(--accent1-color);
+    /* Background color */
+    margin-top: 30px;
 }
 
 .adventure img {
-    width: 30em;
+    max-width: 200px;
     /* Set width of the image */
     height: auto;
     /* Maintain aspect ratio */
 }
 
-footer p {
-    border: --accent2-color solid 1px;
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border: 1pxsolid (--accent2-color);
     background-color: #003d5b;
     color: #f25d52;
-    text-align: center;
+}
+
+.footer p {
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 20px;
+
 }
 
 .social img {
-    width: 3em;
+    width: 25px;
+    padding: 15px;
     /* Set width of the image */
 }
