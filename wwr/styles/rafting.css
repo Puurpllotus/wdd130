@@ -404,20 +404,20 @@ footer {
     transform: scale(1.1);
     /* Scale up on hover */
 }
-table {
+.trips-table {
     width: 100%;
     border-collapse: collapse;
     margin: 0 auto;
 }
 
-th, td {
+.trips-table th, .trips-table td{
     padding: 8px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
     
 }
 
-th {
+.trips-table th{
     background-color: #eed0ee;
 }
 

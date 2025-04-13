@@ -35,7 +35,7 @@
                 <a href="contact.html" class="button-link">Book a Trip</a>
             </div>
         </div>
-        <section class="diff-trips">
+        <div class="diff-trips">
             <a href="trips-kayaking.html">
                 <img src="images/Kayaking.jpg" alt="Kayaking">
                 <p>Kayaking</p>
@@ -48,16 +48,18 @@
                 <img src="images/Rock-climbing.jpg" alt="Rock-climbing">
                 <p>Rock Climbing</p>
             </a>
-        </section>
-        <table border="1" class="trips-table">
+        </div>
+        <table class="trips-table">
             <thead>
                 <tr>
                     <th>Activity</th>
                     <th>Description</th>
-            <tbody>
+                </tr> <!-- Closing tag added -->
+            </thead>
+            <tbody> <!-- Moved tbody tag above -->
                 <tr>
                     <td>Rafting</td>
-                    <td>Rafting is an adventurous outdoor activity that involves navigating through rivers or other bodies of water using an inflatable raft. It is often done on whitewater rivers, where the flow of water creates rapids and obstacles that add excitement and challenge to the experience</td>
+                    <td>Rafting is an adventurous outdoor activity that involves navigating through rivers or other bodies of water using an inflatable raft. It is often done on whitewater rivers, where the flow of water creates rapids and obstacles that add excitement and challenge to the experience.</td>
                 </tr>
                 <tr>
                     <td>Kayaking</td>
@@ -67,8 +69,8 @@
                     <td>Rock Climbing</td>
                     <td>Rock climbing is an outdoor activity that involves climbing up, down, or across natural rock formations or artificial rock walls.</td>
                 </tr>
-            </tbody>
-        </table>
+            </tbody> <!-- Closing tbody tag added -->
+        </table>        
     </main>
     <footer class="footer">
         <p>&copy;2025 | Rapid White Rafting | Tamunobarabinye S. Longjohn</p>
