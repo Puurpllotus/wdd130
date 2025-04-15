@@ -72,11 +72,171 @@ footer {
     margin: 0 auto
 }
 
-.hero {
-    position: relative;
-    /* Positioning relative to the hero div */
+.logo img {
+    width: 170px;
+    /* Set width of the image */
+    height: 150px;
+    /* Maintain aspect ratio */
+    margin: 0 auto;
+    /* Margin around the image */
+    border-radius: 30%;
 }
 
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    /* Set width of the image */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin: 0 auto;
+}
+
+.banner-header h1 {
+    position: absolute;
+    /* Positioning this section absolutely */
+    left: 10%;
+    top: 20px;
+    /* Adjust as needed */
+    margin:0 auto;
+    /* Margin around the heading */
+    font-size: 35px;
+    /* Font size for heading */
+}
+
+.banner-text p{
+    float: left;
+    position: absolute;
+    /* Positioning this section relative to the banner */
+    bottom: 190px;
+    /* Adjust as needed */
+    color: var(--accent1-color);
+    /* Change color for contrast */
+    font-size: 22px;
+    /* Font size for text */
+    background-color: #e689de8a;
+    padding: 10px;
+    /* Adds padding around the text */
+    margin: auto;
+}
+
+.btn-container .button {
+    display: flex;
+    /* Float image to the right */
+    width: 90%;
+    font-size: 25px;
+    /* Set font size of the button */
+    margin: 0 auto;
+    /* Margin around the image */
+    position: relative;
+    bottom: 15px;
+    /* Adjust the vertical position */
+    justify-content: center;
+    /* Adjust the horizontal position */
+    padding: 5px;
+    /* Padding around the button */
+    background-color: rgb(157, 201, 243);
+    /* Semi-transparent background */
+    color: #000;
+    /* Text color */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s;
+    /* Smooth hover effect */
+}
+
+.btn-container :hover {
+    background-color: var(--secondary-color);
+    /* Change background on hover */
+    transform: scale(1.1);
+}
+
+.background-image {
+    position: relative;
+}
+
+.background-image img {
+    display: flex;
+    width: 140%;
+    /* Adjust as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.home-images {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr) 2fr;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+    /* Gap between images */
+    margin: 0;
+    /* Margin around the grid */
+    width: 100%;
+    /* Full width of the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    padding: 80px;
+    /* Padding around the images */
+
+    font-size: 23px;
+    /* Font size for text */
+    top: 200px;
+}
+
+.home-images p {
+    background-color: #7792dfb7;
+    /* Semi-transparent background */
+    color: #1e011f;
+    /* Text color */
+    margin: 0 auto;
+}
+.newsletter {
+    position:absolute;
+    bottom: 0;
+    display: grid;
+    background-color: #f3a4ec;
+    padding: 20px;
+    font-size: 18px;
+}
+.button-container{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #83aec4;
+    padding: 20px;
+    border-radius: 20%;
+    transition: background-color 0.3s;
+}
+
+.button-container :hover{
+    background-color: var(--secondary-color);
+    /* Change background on hover */
+    transform: scale(1.1);
+}
+.subscribe{
+    font-size: 20px;
+    font-family: var(--paragraph-font);
+    font-weight: bolder;
+    padding: 15px;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    border-radius: 5px;
+}
+.subscribe:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.hero {
+    position: relative;
+    margin:auto;
+}
 .hero img {
     width: 100%;
     /* Set width of the image */
@@ -89,8 +249,9 @@ footer {
 .hero h1 {
     position: absolute;
     top: 1em;
+    width:100%;
     /* Adjust as needed */
-    left: 50%;
+    left: 70%;
     /* Center horizontally */
     transform: translateX(-50%);
     /* Centering adjustment */
@@ -104,6 +265,14 @@ footer {
     /* Padding around the heading*/
     margin: 0 auto;
     /* Margin around the heading */
+}
+
+.hero h2 {
+    position: absolute;
+    top: 130px;
+    /* Adjust as needed */
+    color: var(--accent1-color);
+    margin: 0 auto;
 }
 
 .hero article {
@@ -124,7 +293,7 @@ footer {
 }
 
 .hero article img {
-    display: flexbox;
+    display: flex;
     /* Float image to the right */
     width: 20rem;
     /* Set width of the image */
@@ -404,20 +573,22 @@ footer {
     transform: scale(1.1);
     /* Scale up on hover */
 }
+
 .trips-table {
     width: 100%;
     border-collapse: collapse;
     margin: 0 auto;
 }
 
-.trips-table th, .trips-table td{
+.trips-table th,
+.trips-table td {
     padding: 8px;
     text-align: left;
     border: 1px solid #ddd;
-    
+
 }
 
-.trips-table th{
+.trips-table th {
     background-color: #eed0ee;
 }
 
